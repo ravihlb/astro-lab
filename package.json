@@ -1,17 +1,60 @@
 {
   "name": "astro-lab",
   "version": "0.0.1",
-  "description": "Let's build a blog",
-  "main": "index.js",
-  "repository": "https://github.com/ravihlb/astro-lab.git",
-  "author": "ravihlb <ravi@deliverydireto.com.br>",
-  "license": "GPL-3.0",
   "private": false,
+  "description": "Let's build a blog",
+  "author": {
+    "name": "ravihlb",
+    "email": "ravi@deliverydireto.com.br"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "main": "index.js",
   "dependencies": {
+    "core-js": "^3.6.5",
     "vue": "^3.2.22"
   },
   "devDependencies": {
     "@vue/cli": "^4.5.15",
-    "@vue/compiler-sfc": "^3.2.22"
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.2.22",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "_id": "astro-lab@0.0.1",
+  "bugs": {
+    "url": "https://github.com/ravihlb/astro-lab/issues"
+  },
+  "homepage": "https://github.com/ravihlb/astro-lab#readme",
+  "license": "GPL-3.0",
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ravihlb/astro-lab.git"
   }
 }
