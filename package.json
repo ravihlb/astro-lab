@@ -1,25 +1,17 @@
 {
   "name": "astro-lab",
   "version": "0.0.1",
-  "description": "My website",
+  "description": "Let's build a blog",
   "main": "index.js",
-  "scripts": {
-    "test": "test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ravihlb/astro-lab.git"
-  },
-  "author": "ravihlb",
+  "repository": "https://github.com/ravihlb/astro-lab.git",
+  "author": "ravihlb <ravi@deliverydireto.com.br>",
   "license": "GPL-3.0",
-  "bugs": {
-    "url": "https://github.com/ravihlb/astro-lab/issues"
-  },
-  "homepage": "https://github.com/ravihlb/astro-lab#readme",
+  "private": false,
   "dependencies": {
     "vue": "^3.2.22"
   },
   "devDependencies": {
+    "@vue/cli": "^4.5.15",
     "@vue/compiler-sfc": "^3.2.22"
   }
 }
