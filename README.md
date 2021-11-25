@@ -1,2 +1,2 @@
-# astro-lab
+# astro-lab.xyz
 Let's goooo
