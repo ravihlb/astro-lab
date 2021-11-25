@@ -1,0 +1,25 @@
+{
+  "name": "astro-lab",
+  "version": "0.0.1",
+  "description": "My website",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ravihlb/astro-lab.git"
+  },
+  "author": "ravihlb",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ravihlb/astro-lab/issues"
+  },
+  "homepage": "https://github.com/ravihlb/astro-lab#readme",
+  "dependencies": {
+    "vue": "^3.2.22"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.2.22"
+  }
+}
