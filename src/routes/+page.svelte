@@ -4,37 +4,47 @@
 
     let count = 0
     $: doubled = count * 2
+
     function increment () {
         count += 1
     }
 </script>
 
 <style>
+    .main {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
     .color-purple {
-        color: #512DA8
+        color: #512DA8;
     }
 
     .h-centered {
-        text-align: center
+        text-align: center;
     }
+
 </style>
 
-<h1 class="h-centered">
-    Welcome to
-    <br>
-    <span class="color-purple">{blogName}</span>
-</h1>
+<html class="main">
+    <h1 class="h-centered">
+        Welcome to
+        <br>
+        <span class="color-purple">{blogName}</span>
+    </h1>
 
-<Pages/>
+    <Pages/>
 
-<p>
-    Count: {count}
+    <p>
+        Count: {count}
 
-    <button class="h.centered" on:click={increment}>
-        +1
-    </button>
-</p>
+        <button class="h.centered" on:click={increment}>
+            +1
+        </button>
+    </p>
 
-<p>Count doubled: {doubled}</p>
+    <p>Count doubled: {doubled}</p>
 
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+    <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+</html>
+
