@@ -1,0 +1,19 @@
+---
+title: From Bloated Windows to dwm Arch Linux - The Quest for Minimalism
+date: 2022-01-07
+---
+# {title}
+Nowadays, about 75% of computer users use Windows. Windows is a system that
+seems primarily concerned with:
+    1. generating revenue for Microsoft through licensing sales
+    2. ease of use (debatable)
+    3. usability and clarity over efficient and profficient use of technology
+
+These three priorities result in a system that is very far from minimal.
+Apple's systems seem a bit better in terms of minimalism, but both of these
+companies' code is practically all proprietary, which is frankly very retrograde.
+
+## Why Minimalism
+The definition for minimalism found on Wiktionary is:
+> 
+

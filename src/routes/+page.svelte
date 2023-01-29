@@ -1,5 +1,5 @@
 <script>
-    import Pages from './Pages.svelte'
+    import ArticlesList from './articles-list.svelte'
     const blogName = 'Astro-Lab'
 
     let count = 0
@@ -10,31 +10,20 @@
     }
 </script>
 
-<style>
-    .main {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    .color-purple {
-        color: #512DA8;
-    }
-
-    .h-centered {
-        text-align: center;
-    }
-
-</style>
-
 <html class="main">
     <h1 class="h-centered">
         Welcome to
         <br>
-        <span class="color-purple">{blogName}</span>
+        <span class="accent-color">{blogName}</span>
     </h1>
 
-    <Pages/>
+    <p>Here you'll find a compendium of guides and articles about computer science, 
+    programming, tech and some miscelaneous interesting stuff.</p>
 
+    <ArticlesList />
+    <br>
+
+    <h2>Incrementer</h2>
     <p>
         Count: {count}
 
@@ -44,7 +33,5 @@
     </p>
 
     <p>Count doubled: {doubled}</p>
-
-    <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
 </html>
 

@@ -5,7 +5,12 @@ const config = {
 	plugins: [sveltekit()],
 	test: {
 		include: ['src/**/*.{test,spec}.{js,ts}']
-	}
+	},
+    server: {
+        fs: {
+            allow: ['static'],
+        },
+    },
 };
 
 export default config;
