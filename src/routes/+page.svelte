@@ -1,6 +1,5 @@
 <script>
-    import ArticlesList from './articles-list.svelte'
-    const blogName = 'Astro-Lab'
+    import ArticlesList from '$components/articles/ArticlesList.svelte'
 
     let count = 0
     $: doubled = count * 2
@@ -10,11 +9,11 @@
     }
 </script>
 
-<html class="main">
+<html lang="en" class="main">
     <h1 class="h-centered">
         Welcome to
         <br>
-        <span class="accent-color">{blogName}</span>
+        <span class="accent-color">Astro-Lab</span>
     </h1>
 
     <p>Here you'll find a compendium of guides and articles about computer science, 

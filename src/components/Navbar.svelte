@@ -21,7 +21,7 @@
         <a href="/">
             <img
             class="main-icon"
-            src="../../static/images/astrolabe.svg"
+            src="images/astrolabe.svg"
             alt="An astrolabe, a medieval instrument that was once used to determine the altitude of the sun or other celestial bodies, often for navigation."
             >
         </a>

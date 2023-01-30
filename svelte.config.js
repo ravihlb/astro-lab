@@ -14,9 +14,8 @@ const config = {
   kit: {
     adapter: adapter(),
     alias: {
-        // TODO
-        // Fix this alias
-        'static': './static/',
+        '$static': 'static/',
+        '$components': 'src/components/',
     }
   },
 };
