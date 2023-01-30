@@ -3,10 +3,11 @@
 </script>
 
 <style lang="sass">
-    :global(.main)
-        margin-left: 10%
-        margin-right: 10%
-    
+    :global(body)
+        --padding: calc(2 * 1.5em)
+        padding: 0 var(--padding) var(--padding)
+        margin: 0
+
     :global(.accent-color)
         color: #512DA8
 
@@ -17,6 +18,10 @@
         font-size: 1.2em
         margin-right: 0px
 </style>
+
+<html>
+    <title>Astrolab</title>
+</html>
 
 <Navbar />
 <slot />

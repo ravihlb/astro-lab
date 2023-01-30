@@ -11,6 +11,7 @@
         justify-content: center
         margin-bottom: 2.23em
         vertical-align: middle
+        text-decoration: none
 
     .main-icon
         width: 3.5em

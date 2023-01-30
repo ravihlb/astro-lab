@@ -1,8 +1,7 @@
 <script>
-    // your script goes here
+    import ArticlesList from '$components/articles/ArticlesList.svelte'
 </script>
 
 <html>
-    <h1 class="h-centered accent-color">You are in the articles page!</h1>
-
+    <ArticlesList />
 </html>
