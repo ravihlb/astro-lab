@@ -17,16 +17,21 @@
         width: 3.5em
 
 </style>
+
 <html>
     <nav>
-        <a href="/">
+        <a
+            id="logo"
+            href="/">
             <img
-            class="main-icon"
-            src="images/astrolabe.svg"
-            alt="An astrolabe, a medieval instrument that was once used to determine the altitude of the sun or other celestial bodies, often for navigation."
+                class="main-icon"
+                src="@/static/images/astrolabe.svg"
+                alt="An astrolabe, a medieval instrument that was once used to determine the altitude of the sun or other celestial bodies, often for navigation."
             >
         </a>
-        <a id="articles" href="/articles">
+        <a
+            id="articles"
+            href="/articles">
             Articles
         </a>
     </nav>

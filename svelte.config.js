@@ -1,3 +1,4 @@
+import path from 'path'
 import { mdsvex } from "mdsvex";
 import mdsvexConfig from "./mdsvex.config.js";
 import adapter from "@sveltejs/adapter-auto";
@@ -14,8 +15,7 @@ const config = {
   kit: {
     adapter: adapter(),
     alias: {
-        '$static': 'static/',
-        '$components': 'src/components/',
+        '@': path.resolve('astro-lab', 'src'),
     }
   },
 };

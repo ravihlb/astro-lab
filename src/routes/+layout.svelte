@@ -1,18 +1,17 @@
 <script>
-    import Navbar from '$components/Navbar.svelte'
+    import Navbar from '@/components/Navbar.svelte'
 </script>
 
 <style lang="sass">
     :global(body)
-        --padding: calc(2 * 1.5em)
-        padding: 0 var(--padding) var(--padding)
+        padding: 0 3em 3em
         margin: 0
+
+    :global(h)
+        text-align: center
 
     :global(.accent-color)
         color: #512DA8
-
-    :global(.h-centered)
-        text-align: center
 
     :global(li::marker)
         font-size: 1.2em

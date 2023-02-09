@@ -1,5 +1,5 @@
 <html lang="en" class="main">
-    <h1 class="h-centered">
+    <h1>
         Welcome to <span class="accent-color">Astrolab</span>
     </h1>
 
