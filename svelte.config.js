@@ -15,7 +15,7 @@ const config = {
   kit: {
     adapter: adapter(),
     alias: {
-        '@': path.resolve('astro-lab', 'src'),
+        '@': path.resolve('src'),
     }
   },
 };

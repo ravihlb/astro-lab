@@ -1,9 +1,9 @@
 <html lang="en" class="main">
-    <h1>
+    <h1 class="center-text">
         Welcome to <span class="accent-color">Astrolab</span>
     </h1>
 
-    <p>Here you'll find a compendium of guides and articles about computer science, 
+    <p class="center-text">Here you'll find a compendium of guides and articles about computer science, 
     programming, tech and some miscelaneous interesting stuff.</p>
 </html>
 

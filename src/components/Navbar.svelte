@@ -2,7 +2,8 @@
     nav
         columns: 10em
         height: 3em
-        margin: 2em 2em
+        margin: 2em auto
+        width: 10em
 
     a#articles
         align-items: center
@@ -25,7 +26,7 @@
             href="/">
             <img
                 class="main-icon"
-                src="@/static/images/astrolabe.svg"
+                src="images/astrolabe.svg"
                 alt="An astrolabe, a medieval instrument that was once used to determine the altitude of the sun or other celestial bodies, often for navigation."
             >
         </a>

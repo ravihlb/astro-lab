@@ -7,7 +7,7 @@
         padding: 0 3em 3em
         margin: 0
 
-    :global(h)
+    :global(.center-text)
         text-align: center
 
     :global(.accent-color)
@@ -18,7 +18,7 @@
         margin-right: 0px
 </style>
 
-<html>
+<html lang="en">
     <title>Astrolab</title>
 </html>
 
