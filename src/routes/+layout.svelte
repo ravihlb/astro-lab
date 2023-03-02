@@ -7,6 +7,10 @@
         padding: 0 3em 3em
         margin: 0
 
+    :global(.container)
+        max-width: 60em
+        margin: 0 auto
+
     :global(.center-text)
         text-align: center
 
@@ -20,7 +24,10 @@
 
 <html lang="en">
     <title>Astrolab</title>
+    <div class="container">
+        <Navbar />
+        <slot />
+    </div>
+
 </html>
 
-<Navbar />
-<slot />

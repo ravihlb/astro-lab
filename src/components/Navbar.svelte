@@ -1,9 +1,8 @@
 <style lang="sass">
     nav
-        columns: 10em
-        height: 3em
-        margin: 2em auto
+        margin: 2em 2em 0 0
         width: 10em
+        align-items: center
 
     a#articles
         align-items: center
