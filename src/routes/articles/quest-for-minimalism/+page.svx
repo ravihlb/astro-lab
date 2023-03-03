@@ -2,7 +2,19 @@
 title: From Bloated Windows to dwm Arch Linux - The Quest for Minimalism
 date: 2022-01-07
 ---
+
+<script>
+    import cover from './img/cover.jpg'
+    import notifications from './img/notifications-everywhere.jpg'
+
+//    export let title
+//    export let date
+</script>
+
 # {title}
+---
+![cover]({cover})
+
 Nowadays, about 75% of computer users use Windows. Windows is a system that
 seems primarily concerned with:
     1. generating revenue for Microsoft through licensing sales
@@ -11,9 +23,32 @@ seems primarily concerned with:
 
 These three priorities result in a system that is very far from minimal.
 Apple's systems seem a bit better in terms of minimalism, but both of these
-companies' code is practically all proprietary, which is frankly very retrograde.
+companies' code is practically all proprietary, which is frankly a retrograde business model. Open source software has more than proved its efficacy and safety advantages over the closed source model.
 
 ## Why Minimalism
 The definition for minimalism found on Wiktionary is:
 > 1. (art) A style of art that emphasises extreme simplicity of form.
 
+I'd like to concentrate on the *simplicity of form* part of the definition. Simplicity of form allows the user to concentrate on the most essential and useful parts of the system. Having to organize a few important things is a lot better than having to organize a myriad of different things that may be useful from time to time, but that most of the time, are there just bloating up the system.
+
+At the end of the day, this question itself boils down to:
+
+## Why are we using computers anyway?
+As a kid I used computers as a gaming device, mainly. We had a Windows 98 machine at home and the only entertainment available there was either browsing for fan-made Sonic The Hedgehog webcomics or freaking MS Paint. So you can imagine the joy I felt when my mom bought a CD with 1000 small Macromedia Flash games and a few .exes as well, along with things like the Bug! Demo and the Sonic Roboblast 2, man, what a blast from the past!
+Anyway, that was all before computers became Harder, Better, Faster, Stronger and internet speeds with them.
+Nowadays some people even find it strange if you don't bring your own tiny, portable, incredibly versatile personal ~~surveillance device~~ computer with you when going out the house or something.
+
+We use the damn things for everything! From the most useful like street maps, messaging apps (who even calls anymore lol) to the most useless garbage like idle games. Seriously, why are you playing a game in which the main mechanic is not playing it? Idk people go play something real like g'old Pixel Dungeon or something. hap inc. games is where it's at for mobile gaming tbh.
+
+Anyways, all of this was to ask the question on the header: **why** are we using computers after all?
+Technically, smartphones are computers running a mobile-first operating system, but you know I'm really asking about desktop or laptop computers with their big monitors and pretty RGB gaming mechanical keyboards.
+
+[funny gaming pc meme]
+
+A lot of people use them professionally. Be it working with spreadsheets, writing documents, coordinating teams through *ye ole' boring meeting that could have been an email*, designing and editing videos and images, hell, some people are crazy enough to even do programming on these things!
+
+So, the thing is, if you'll be working with computers for the rest of your foreseeable future, wouldn't it be best for you to have the cleanest, most peaceful, distraction-free environment to flourish your professional skills, which are really the things that really matter when using these machines? I'm a big believer that we should own our technology. "The medium is the message", as Marshall McLuhan once wrote. I believe **we** the users should decide what goes in and out of our own digital little world. There is just so much damn noise in the internet nowadays that trying to catch up with everything you're interested in will for sure either drive you insane or just exhausted before you've seen even 1% of the stuff. With so much damn information easily available nowadays, **the ability to focus** actually becomes your most useful skill.
+
+![notifications everywhere]({notifications})
+
+Also, if you're reading this, you're probably as much as I am into the more technical side of computers. Have you ever wondered about how your OS is put together? Things like "Oh, that's a pretty neat clock on the taskbar. I wonder how they made something like that."
