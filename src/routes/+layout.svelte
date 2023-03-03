@@ -3,6 +3,12 @@
 </script>
 
 <style lang="sass">
+    :root
+        --dark-purple: #570faf
+
+    :global(.accent-color)
+        color: var(--dark-purple)
+
     :global(body)
         padding: 0 3em 3em
         margin: 0
@@ -14,12 +20,15 @@
     :global(.center-text)
         text-align: center
 
-    :global(.accent-color)
-        color: #512DA8
-
     :global(li::marker)
         font-size: 1.2em
         margin-right: 0px
+
+    :global(p img)
+        display: block
+        margin: 0 auto
+        height: 25em
+        max-width: 60em
 </style>
 
 <html lang="en">
