@@ -1,5 +1,5 @@
 <script>
-    import Navbar from '@/components/Navbar.svelte'
+    import Navbar from 'src/components/Navbar.svelte'
 </script>
 
 <style lang="sass">
@@ -37,6 +37,5 @@
         <Navbar />
         <slot />
     </div>
-
 </html>
 

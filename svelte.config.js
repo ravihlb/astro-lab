@@ -13,10 +13,7 @@ const config = {
   preprocess: [vitePreprocess(), mdsvex(mdsvexConfig)],
 
   kit: {
-    adapter: adapter(),
-    alias: {
-        '@': path.resolve('src'),
-    }
+    adapter: adapter()
   },
 };
 

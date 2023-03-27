@@ -1,3 +1,7 @@
+<script>
+    const logoSrc = '/images/astrolabe.svg'
+</script>
+
 <style lang="sass">
     nav
         margin: 2em 2em 0 0
@@ -18,14 +22,14 @@
 
 </style>
 
-<html>
+<html lang="en">
     <nav>
         <a
             id="logo"
             href="/">
             <img
                 class="main-icon"
-                src="images/astrolabe.svg"
+                src="{logoSrc}"
                 alt="An astrolabe, a medieval instrument that was once used to determine the altitude of the sun or other celestial bodies, often for navigation."
             >
         </a>
