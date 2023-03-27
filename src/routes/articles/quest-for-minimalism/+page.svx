@@ -1,19 +1,14 @@
----
-title: From Bloated Windows to dwm Arch Linux - The Quest for Minimalism
-date: 2022-01-07
----
-
-<script>
+<script scope="module">
     import cover from './img/cover.jpg'
     import notifications from './img/notifications-everywhere.jpg'
 
-//    export let title
-//    export let date
+    export let title = 'From Bloated Windows to dwm Arch Linux - The Quest for Minimalism'
+    export let date = '2022-01-07'
 </script>
 
 # {title}
 ---
-![cover]({cover})
+<img id="cover" src="{cover}">
 
 Nowadays, about 75% of computer users use Windows. Windows is a system that
 seems primarily concerned with:
