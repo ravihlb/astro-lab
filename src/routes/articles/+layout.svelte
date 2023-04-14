@@ -6,24 +6,21 @@
         margin-top: 2.5em
         margin-bottom: 2em
 
-    :global(img)
-        border-radius: 1rem
+    img
+        border-radius: 1em
         display: block
         margin: auto
         width: 80%
 
-    h1, h2, h3
+    :global(h1, h2)
         color: var(--dark-purple)
         text-align: center
 
-    h1
+    :global(h1)
         font-size: 3em
 
-    h2
+    :global(h2)
         font-size: 2em
-
-    h3
-        font-size: 1.5em
 </style>
 
 <slot />
