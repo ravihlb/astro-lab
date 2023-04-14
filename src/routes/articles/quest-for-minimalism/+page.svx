@@ -1,6 +1,8 @@
 <script scope="module">
+    import archbtw from './img/archbtw.png'
     import cover from './img/cover.jpg'
     import notifications from './img/notifications-everywhere.jpg'
+    import MechanicalKeyboard from './MechanicalKeyboard.svelte'
 
     export let title = 'From Bloated Windows to dwm Arch Linux - The Quest for Minimalism'
     export let date = '2022-01-07'
@@ -8,7 +10,7 @@
 
 # {title}
 ---
-<img id="cover" src="{cover}">
+<img class="crop" id="cover" src="{cover}">
 
 Nowadays, about 75% of computer users use Windows. Windows is a system that
 seems primarily concerned with:
@@ -21,6 +23,7 @@ Apple's systems seem a bit better in terms of minimalism, but both of these
 companies' code is practically all proprietary, which is frankly a retrograde business model. Open source software has more than proved its efficacy and safety advantages over the closed source model.
 
 ## Why Minimalism
+
 The definition for minimalism found on Wiktionary is:
 > 1. (art) A style of art that emphasises extreme simplicity of form.
 
@@ -29,21 +32,65 @@ I'd like to concentrate on the *simplicity of form* part of the definition. Simp
 At the end of the day, this question itself boils down to:
 
 ## Why are we using computers anyway?
+
 As a kid I used computers as a gaming device, mainly. We had a Windows 98 machine at home and the only entertainment available there was either browsing for fan-made Sonic The Hedgehog webcomics or freaking MS Paint. So you can imagine the joy I felt when my mom bought a CD with 1000 small Macromedia Flash games and a few .exes as well, along with things like the Bug! Demo and the Sonic Roboblast 2, man, what a blast from the past!
 Anyway, that was all before computers became Harder, Better, Faster, Stronger and internet speeds with them.
 Nowadays some people even find it strange if you don't bring your own tiny, portable, incredibly versatile personal ~~surveillance device~~ computer with you when going out the house or something.
 
-We use the damn things for everything! From the most useful like street maps, messaging apps (who even calls anymore lol) to the most useless garbage like idle games. Seriously, why are you playing a game in which the main mechanic is not playing it? Idk people go play something real like g'old Pixel Dungeon or something. hap inc. games is where it's at for mobile gaming tbh.
+We use the damn things for everything! From the most useful like street maps, messaging apps (who even calls anymore lol) to the most useless garbage like idle games. jk, but, come on, why are you playing a game in which the main mechanic is not actually playing it? Idk people go play something real like g'old Pixel Dungeon or something. hap inc. games is where it's at for mobile gaming tbh.
 
 Anyways, all of this was to ask the question on the header: **why** are we using computers after all?
 Technically, smartphones are computers running a mobile-first operating system, but you know I'm really asking about desktop or laptop computers with their big monitors and pretty RGB gaming mechanical keyboards.
 
-[funny gaming pc meme]
+<MechanicalKeyboard/>
 
-A lot of people use them professionally. Be it working with spreadsheets, writing documents, coordinating teams through *ye ole' boring meeting that could have been an email*, designing and editing videos and images, hell, some people are crazy enough to even do programming on these things!
+We use them professionally, for leisure, for hobbies. Be it working with spreadsheets, writing documents, coordinating teams through *ye ole' boring meeting that could have been an email*, designing and editing videos and images, hell, some people are crazy enough to even do programming on these things!
 
-So, the thing is, if you'll be working with computers for the rest of your foreseeable future, wouldn't it be best for you to have the cleanest, most peaceful, distraction-free environment to flourish your professional skills, which are really the things that really matter when using these machines? I'm a big believer that we should own our technology. "The medium is the message", as Marshall McLuhan once wrote. I believe **we** the users should decide what goes in and out of our own digital little world. There is just so much damn noise in the internet nowadays that trying to catch up with everything you're interested in will for sure either drive you insane or just exhausted before you've seen even 1% of the stuff. With so much damn information easily available nowadays, **the ability to focus** actually becomes your most useful skill.
+So, the thing is, if you'll be working with computers for the rest of your foreseeable future, wouldn't it be best for you to have the cleanest, most tranquil, distraction-free environment to flourish your professional skills, which are really the things that really matter when using these machines? I'm a big believer that we should own our technology. "The medium is the message", as Marshall McLuhan once wrote. I believe **we** the users should decide what goes in and out of our own digital medium.
 
-![notifications everywhere]({notifications})
+Also, there is just so much damn noise in the internet nowadays that trying to catch up with everything you're interested in will for sure either drive you insane or just exhausted before you've seen even 1% of the stuff. With so much damn information easily available nowadays, **the ability to focus** actually becomes your most useful skill and having distractions hijacking your attention all the time (like notifications) is a big no-no.
 
-Also, if you're reading this, you're probably as much as I am into the more technical side of computers. Have you ever wondered about how your OS is put together? Things like "Oh, that's a pretty neat clock on the taskbar. I wonder how they made something like that."
+<img 
+    class="span-mobile"
+    src="{notifications}"
+    alt="notifications everywhere"
+/>
+
+Also, if you're reading this, you're maybe as much into the more technical side of computers as I am? 
+Have you ever wondered about how your Operational System is put together? Things like "Oh, that's a pretty neat clock on the taskbar. I wonder how they made something like that."
+Well, my friend, you should probably try out a minimal Linux installation at some point. Like Arch Linux!. Manually configuring your own network driver, manager, window manager, session manager, etc. will give you a taste of what putting an OS together actually looks like. And it can be incredibly fun to tinker with what could be thinked of as "low level software"
+
+The point here is that Linux offers you the ability to set up your digital environment to be as distraction-free as you want, and that is really something to keep in mind when choosing your digital daily driver. There is currently no other platform that's as versatile in terms of customization as a Linux machine is.
+
+In this post I'll share some key points of my journey from knowing nothing about computers at all to using Arch as my daily driver, mainly for programming. I hope this can inspire some of you, or that you can glimpse something useful out of my digital shenannigans.
+
+## Learning to Windows - The GUI
+[insert gooey joke here]
+Everyone has to start somewhere. As mentioned before, the great, great majority of people still use Windows as their daily driver OS. Sure, there's a lot of stuff to learn before you can weave your way through a Unix system and that spooky terminal! But a GUI system also has a certain (maybe smaller) learning curve.
+
+A GUI system will show all of your options visually by default whereas a terminal-centric OS will show you only what you prompt it to show you. You could make a case that this just ends up being a hassle for new users and has a certain disgusting elitist feel to it.
+
+<img 
+    src="{archbtw}"
+    alt="fedora arch linux user saying he uses arch btw"
+    style="max-width: 12em"
+/>
+
+
+And to be honest here, I totally get it! But while valid and true, that is certainly not the full picture.
+
+### We Have to Go Deeper - The Mythic Control Panel
+- Cusotmizations
+
+## In The Belly of The Beast: The Command Line
+or
+## Down The Rabbit Hole: The Command Line
+[embrace the power of the command line]
+
+### Ushering Commands vs Clicking on Icons
+
+## Crossing the Rubicon - Welcome Linux
+
+### Debian Debut - `sudo` and `apt`
+
+## Above and Beyond - The Great Arch
