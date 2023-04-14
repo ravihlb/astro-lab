@@ -1,4 +1,3 @@
-import path from 'path'
 import { mdsvex } from "mdsvex";
 import mdsvexConfig from "./mdsvex.config.js";
 import adapter from "@sveltejs/adapter-auto";
@@ -13,7 +12,10 @@ const config = {
   preprocess: [vitePreprocess(), mdsvex(mdsvexConfig)],
 
   kit: {
-    adapter: adapter()
+    adapter: adapter(),
+    alias: {
+        '@components/*': 'src/components/*',
+    }
   },
 };
 
