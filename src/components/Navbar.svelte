@@ -5,12 +5,12 @@
 <style lang="sass">
     nav
         margin: 2em 2em 0 0
-        width: 10em
         align-items: center
+        display: grid
+        grid-template-columns: 60px 200px
 
     a#articles
         align-items: center
-        display: inline-block
         font-size: 1.3em
         justify-content: center
         margin-bottom: 2.23em
@@ -30,13 +30,10 @@
             <img
                 class="main-icon"
                 src="{logoSrc}"
-                alt="An astrolabe, a medieval instrument that was once used to determine the altitude of the sun or other celestial bodies, often for navigation."
+                alt="An astrolabe, a medieval instrument that was once used to 
+                determine the altitude of the sun or other celestial bodies, 
+                often for navigation."
             >
-        </a>
-        <a
-            id="articles"
-            href="/articles">
-            Articles
         </a>
     </nav>
 </html>
