@@ -51,6 +51,11 @@
     :global(h3)
         font-size: 1.3em
 
+    :global(p img)
+        display: block
+        margin: 0 auto
+        height: 25em
+        max-width: 60em
 </style>
 
 <html lang="en">
@@ -60,4 +65,3 @@
         <slot />
     </div>
 </html>
-
