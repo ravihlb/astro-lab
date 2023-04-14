@@ -4,7 +4,7 @@ const dev = process.argv.includes('dev')
 const basePath = dev ? '' : process.env.BASE_PATH;
 
 /** @type {import('vite').UserConfig} */
-const config = {
+const config: import('vite').UserConfig = {
 	plugins: [sveltekit()],
 	test: {
 		include: [`${basePath}/src/**/*.{test,spec}.{js,ts}`]

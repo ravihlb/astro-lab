@@ -5,7 +5,7 @@
         frameborder="0"
         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
-        >
+    >
     </iframe>
 </div>
 
@@ -21,7 +21,7 @@
         
     @media screen and (max-width: 500px)
         #video-div
-            margin: 0
-            height: 50%
-            width: 150%
+            margin: auto
+            height: 100%
+            width: 100%
 </style>

@@ -11,14 +11,6 @@
         display: grid
         grid-template-columns: 60px 200px
 
-    a#articles
-        align-items: center
-        font-size: 1.3em
-        justify-content: center
-        margin-bottom: 2.23em
-        vertical-align: middle
-        text-decoration: none
-
     .main-icon
         width: 3.5em
 

@@ -1,0 +1,132 @@
+<script scope="module">
+    import archbtw from './img/archbtw.png'
+    import cover from './img/cover.jpg'
+    import notifications from './img/notifications-everywhere.jpg'
+    import MechanicalKeyboard from './MechanicalKeyboard.svelte'
+    import { onMount } from 'svelte'
+
+    export const title = 'From Bloated Windows to dwm Arch Linux - The Quest For Digital Essentialism'
+    export const keywords = ['Windows', 'dwm', 'Arch Linux', 'Digital Essentialism']
+    export const date = '2022-01-07'
+</script>
+
+<h1 id="title" class="center-text">
+    From Bloated
+    <span class="accent-color">
+        {keywords[0]}
+    </span>
+    to
+    <span class="accent-color">
+        {keywords[1]} {keywords[2]}
+    </span>
+    <br>
+    <span class="accent-color">
+        The Quest For {keywords[3]}
+    </span>
+</h1>
+
+---
+<img class="crop" id="cover" src="{cover}">
+
+Nowadays, about 75% of computer users use Windows. Windows is a system that
+seems primarily concerned with:
+    1. generating revenue for Microsoft through licensing sales
+    2. ease of use (debatable)
+    3. usability and clarity over efficient and profficient use of technology
+
+These three priorities result in a system that is very far from minimal.
+Apple's systems seem a bit better in terms of minimalism, but both of these
+companies' code is practically all proprietary, which is frankly a retrograde business model. Open source software has more than proved its efficacy and safety advantages over the closed source model.
+
+<h2>
+    Why Minimalism
+</h2>
+
+The definition for minimalism found on Wiktionary is:
+> 1. (art) A style of art that emphasises extreme simplicity of form.
+
+I'd like to concentrate on the *simplicity of form* part of the definition. Simplicity of form allows the user to concentrate on the most essential and useful parts of the system. Having to organize a few important things is a lot better than having to organize a myriad of different things that may be useful from time to time, but that most of the time, are there just bloating up the system.
+
+At the end of the day, this question itself boils down to:
+
+<h2 class="center-text accent-color">
+Why are we using computers anyway?
+</h2>
+
+As a kid I used computers as a gaming device, mainly. We had a Windows 98 machine at home and the only entertainment available there was either browsing for fan-made Sonic The Hedgehog webcomics or freaking MS Paint. So you can imagine the joy I felt when my mom bought a CD with 1000 small Macromedia Flash games and a few .exes as well, along with things like the Bug! Demo and the Sonic Roboblast 2, man, what a blast from the past!
+Anyway, that was all before computers became Harder, Better, Faster, Stronger and internet speeds with them.
+Nowadays some people even find it strange if you don't bring your own tiny, portable, incredibly versatile personal ~~surveillance device~~ computer with you when going out the house or something.
+
+We use the damn things for everything! From the most useful like street maps, messaging apps (who even calls anymore lol) to the most useless garbage like idle games. jk, but, come on, why are you playing a game in which the main mechanic is not actually playing it? Idk people go play something real like g'old Pixel Dungeon or something. hap inc. games is where it's at for mobile gaming tbh.
+
+Anyways, all of this was to ask the question on the header: **why** are we using computers after all?
+Technically, smartphones are computers running a mobile-first operating system, but you know I'm really asking about desktop or laptop computers with their big monitors and pretty RGB gaming mechanical keyboards.
+
+<MechanicalKeyboard/>
+
+We use them professionally, for leisure, for hobbies. Be it working with spreadsheets, writing documents, coordinating teams through *ye ole' boring meeting that could have been an email*, designing and editing videos and images, hell, some people are crazy enough to even do programming on these things!
+
+So, the thing is, if you'll be working with computers for the rest of your foreseeable future, wouldn't it be best for you to have the cleanest, most tranquil, distraction-free environment to flourish your professional skills, which are really the things that really matter when using these machines? I'm a big believer that we should own our technology. "The medium is the message", as Marshall McLuhan once wrote. I believe **we** the users should decide what goes in and out of our own digital medium.
+
+Also, there is just so much damn noise in the internet nowadays that trying to catch up with everything you're interested in will for sure either drive you insane or just exhausted before you've seen even 1% of the stuff. With so much damn information easily available nowadays, **the ability to focus** actually becomes your most useful skill and having distractions hijacking your attention all the time (like notifications) is a big no-no.
+
+<img 
+    class="span-mobile"
+    src="{notifications}"
+    alt="notifications everywhere"
+/>
+
+Also, if you're reading this, you're maybe as much into the more technical side of computers as I am? 
+Have you ever wondered about how your Operational System is put together? Things like "Oh, that's a pretty neat clock on the taskbar. I wonder how they made something like that."
+Well, my friend, you should probably try out a minimal Linux installation at some point. Like Arch Linux!. Manually configuring your own network driver, manager, window manager, session manager, etc. will give you a taste of what putting an OS together actually looks like. And it can be incredibly fun to tinker with what could be thinked of as "low level software"
+
+The point here is that Linux offers you the ability to set up your digital environment to be as distraction-free as you want, and that is really something to keep in mind when choosing your digital daily driver. There is currently no other platform that's as versatile in terms of customization as a Linux machine is.
+
+In this post I'll share some key points of my journey from knowing nothing about computers at all to using Arch as my daily driver, mainly for programming. I hope this can inspire some of you, or that you can glimpse something useful out of my digital shenannigans.
+
+<h2 class="center-text accent-color">
+Learning to Windows - The GUI
+</h2>
+[insert gooey joke here]
+Everyone has to start somewhere. As mentioned before, the great, great majority of people still use Windows as their daily driver OS. Sure, there's a lot of stuff to learn before you can weave your way through a Unix system and that spooky terminal! But a GUI system also has a certain (maybe smaller) learning curve.
+
+A GUI system will show all of your options visually by default whereas a terminal-centric OS will show you only what you prompt it to show you. You could make a case that this just ends up being a hassle for new users and has a certain disgusting elitist feel to it.
+
+<img 
+    src="{archbtw}"
+    alt="fedora arch linux user saying he uses arch btw"
+    style="max-width: 12em"
+/>
+
+
+And to be honest here, I totally get it! But while valid and true, that is certainly not the full picture.
+
+<h3 class="center-text accent-color">
+We Have to Go Deeper - The Mythic Control Panel
+</h3>
+- Cusotmizations
+
+<h2 class="center-text accent-color">
+In The Belly of The Beast: The Command Line
+</h2>
+or
+<h2 class="center-text accent-color">
+Down The Rabbit Hole: The Command Line
+</h2>
+[embrace the power of the command line]
+
+<h3 class="center-text accent-color">
+Ushering Commands vs Clicking on Icons
+</h3>
+
+<h2 class="center-text accent-color">
+Crossing the Rubicon - Welcome Linux
+</h2>
+
+<h3 class="center-text accent-color">
+Debian Debut - `sudo` and `apt`
+</h3>
+
+<h2 class="center-text accent-color">
+Above and Beyond - The Great Arch
+</h2>
