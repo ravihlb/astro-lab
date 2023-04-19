@@ -6,10 +6,9 @@
 
 <style lang="sass">
     nav
-        margin: 2em 2em 0 0
-        align-items: center
-        display: grid
-        grid-template-columns: 60px 200px
+        margin: 2% 5% 0 0
+        text-align: right
+        float: right
 
     .main-icon
         width: 3.5em
@@ -24,7 +23,7 @@
             <img
                 class="main-icon"
                 src="{logoSrc}"
-                alt="An astrolabe, a medieval instrument that was once used to 
+                alt="Illustration of an astrolabe, a medieval instrument that was once used to 
                 determine the altitude of the sun or other celestial bodies, 
                 often for navigation."
             >

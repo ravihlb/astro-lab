@@ -11,57 +11,69 @@
 
     :global(body)
         font-family: sans-serif
-        padding: 0 3em 3em
-        margin: 0
-
-    :global(.span-mobile)
-        @media screen and (max-width: 500px)
-            width: 100vw
-            margin-left: -3rem
-            padding-left: -3rem
-            padding-right: -3rem
 
     :global(.container)
-        max-width: 60em
         margin: 0 auto
-
-    :global(.center-text)
-        text-align: center
-
-    :global(li::marker)
-        font-size: 1.2em
-        margin-right: 0px
-
-    :global(.crop)
-        width: 200px
-        height: 150px
-        overflow: hidden
-
-    :global(.crop img)
-        width: 400px
-        height: 300px
-        margin: -2em 0 0 100px
-
-    :global(h1)
-        font-size: 2em
-
-    :global(h2)
-        font-size: 1.5em
-
-    :global(h3)
-        font-size: 1.3em
-
-    :global(p img)
-        display: block
-        margin: 0 auto
-        height: 25em
         max-width: 60em
+        padding: 0 10% 10%
+
+        :global(.center-text)
+            text-align: center
+
+        :global(li::marker)
+            font-size: 1.2em
+            margin-right: 0px
+
+        :global(h1)
+            font-size: 2em
+
+        :global(h2)
+            font-size: 1.5em
+
+        :global(h3)
+            font-size: 1.3em
+
+        :global(p img)
+            margin: 0 auto
+            display: block
+            height: 25em
+            max-width: 60em
+        
+        :global(.span-mobile)
+            @media screen and (max-width: 500px)
+                margin: 0 -15% 0 -15.3%
+
+        :global(img.span-mobile)
+            @media screen and (max-width: 500px)
+                border-radius: 0
+                margin: 0 -15% 0 -15.3%
+                width: 100vw
+
+        :global(.youtube-video-container)
+            height: 100%
+            overflow: hidden
+            padding-top: 56.25%
+            position: relative
+            text-align: center
+
+            @media screen and (max-width: 500px)
+                height: 13vw
+
+            :global(iframe)
+                position: absolute
+                top: 0
+                left: 0
+                bottom: 0
+                right: 0
+                height: 100%
+                width: 100%
+
 </style>
 
 <html lang="en">
     <title>Astrolab</title>
+    <Navbar />
     <div class="container">
-        <Navbar />
         <slot />
     </div>
 </html>

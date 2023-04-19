@@ -4,9 +4,15 @@
     import notifications from './img/notifications-everywhere.jpg'
     import MechanicalKeyboard from './MechanicalKeyboard.svelte'
 
+    export const title = 'From Bloated Windows to dwm Arch Linux'
+    export const subtitle = 'The Quest for Digital Essentialism'
 </script>
 
-<img class="crop" id="cover" src="{cover}">
+# { title }
+## { subtitle }
+---
+
+<img class="span-mobile" id="cover" src="{cover}">
 
 Nowadays, about 75% of computer users use Windows. Windows is a system that
 seems primarily concerned with:
@@ -18,9 +24,7 @@ These three priorities result in a system that is very far from minimal.
 Apple's systems seem a bit better in terms of minimalism, but both of these
 companies' code is practically all proprietary, which is frankly a retrograde business model. Open source software has more than proved its efficacy and safety advantages over the closed source model.
 
-<h2>
-    Why Minimalism
-</h2>
+## Why Essentialism
 
 The definition for minimalism found on Wiktionary is:
 > 1. (art) A style of art that emphasises extreme simplicity of form.
@@ -29,9 +33,7 @@ I'd like to concentrate on the *simplicity of form* part of the definition. Simp
 
 At the end of the day, this question itself boils down to:
 
-<h2 class="center-text accent-color">
-Why are we using computers anyway?
-</h2>
+## Why are we using computers anyway?
 
 As a kid I used computers as a gaming device, mainly. We had a Windows 98 machine at home and the only entertainment available there was either browsing for fan-made Sonic The Hedgehog webcomics or freaking MS Paint. So you can imagine the joy I felt when my mom bought a CD with 1000 small Macromedia Flash games and a few .exes as well, along with things like the Bug! Demo and the Sonic Roboblast 2, man, what a blast from the past!
 Anyway, that was all before computers became Harder, Better, Faster, Stronger and internet speeds with them.
@@ -42,7 +44,7 @@ We use the damn things for everything! From the most useful like street maps, me
 Anyways, all of this was to ask the question on the header: **why** are we using computers after all?
 Technically, smartphones are computers running a mobile-first operating system, but you know I'm really asking about desktop or laptop computers with their big monitors and pretty RGB gaming mechanical keyboards.
 
-<MechanicalKeyboard/>
+<MechanicalKeyboard />
 
 We use them professionally, for leisure, for hobbies. Be it working with spreadsheets, writing documents, coordinating teams through *ye ole' boring meeting that could have been an email*, designing and editing videos and images, hell, some people are crazy enough to even do programming on these things!
 
@@ -64,10 +66,11 @@ The point here is that Linux offers you the ability to set up your digital envir
 
 In this post I'll share some key points of my journey from knowing nothing about computers at all to using Arch as my daily driver, mainly for programming. I hope this can inspire some of you, or that you can glimpse something useful out of my digital shenannigans.
 
-<h2 class="center-text accent-color">
-Learning to Windows - The GUI
-</h2>
+## Learning to Windows 
+### The GUI
+
 [insert gooey joke here]
+
 Everyone has to start somewhere. As mentioned before, the great, great majority of people still use Windows as their daily driver OS. Sure, there's a lot of stuff to learn before you can weave your way through a Unix system and that spooky terminal! But a GUI system also has a certain (maybe smaller) learning curve.
 
 A GUI system will show all of your options visually by default whereas a terminal-centric OS will show you only what you prompt it to show you. You could make a case that this just ends up being a hassle for new users and has a certain disgusting elitist feel to it.
@@ -78,35 +81,27 @@ A GUI system will show all of your options visually by default whereas a termina
     style="max-width: 12em"
 />
 
-
 And to be honest here, I totally get it! But while valid and true, that is certainly not the full picture.
 
-<h3 class="center-text accent-color">
-We Have to Go Deeper - The Mythic Control Panel
-</h3>
+### We Have to Go Deeper - The Mythic Control Panel
+
 - Cusotmizations
 
-<h2 class="center-text accent-color">
-In The Belly of The Beast: The Command Line
-</h2>
+## In The Belly of The Beast: The Command Line
+
 or
-<h2 class="center-text accent-color">
-Down The Rabbit Hole: The Command Line
-</h2>
+## Down The Rabbit Hole: The Command Line
+
 [embrace the power of the command line]
 
-<h3 class="center-text accent-color">
-Ushering Commands vs Clicking on Icons
-</h3>
+### Ushering Commands vs Clicking on Icons
 
-<h2 class="center-text accent-color">
-Crossing the Rubicon - Welcome Linux
-</h2>
 
-<h3 class="center-text accent-color">
-Debian Debut - `sudo` and `apt`
-</h3>
+## Crossing the Rubicon - Welcome Linux
 
-<h2 class="center-text accent-color">
-Above and Beyond - The Great Arch
-</h2>
+
+### Debian Debut - `sudo` and `apt`
+
+
+## Above and Beyond - The Great Arch
+

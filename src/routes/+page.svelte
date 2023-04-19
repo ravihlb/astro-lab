@@ -1,5 +1,5 @@
 <script>
-    // import ArticlesList from '@components/articles/ArticlesList.svelte'
+    import PostsList from "../components/posts/PostList.svelte";
 </script>
 
 <html lang="en" class="main">
@@ -16,8 +16,10 @@
     <p class="center-text">Here you'll find a compendium of guides and articles about computer science, 
     programming, tech and some miscelaneous interesting stuff.</p>
 
-    <!-- <h2> -->
-        <!-- Articles -->
-    <!-- </h2> -->
+    <h2 class="accent-color">
+        Posts
+    </h2>
+
+    <PostsList/>
 </html>
 
