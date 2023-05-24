@@ -17,6 +17,9 @@ jobs:
       - name: Install yarn
         run: corepack prepare yarn@stable --activate
 
+      - name: Install dependencies
+        run: yarn
+
       - name: build
         env:
           BASE_PATH: ${GITHUB_WORKSPACE}
