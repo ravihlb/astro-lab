@@ -1,5 +1,7 @@
 <script>
-    const logoSrc = '/images/astrolabe.svg'
+    import { base } from "$app/paths";
+
+    const logoSrc = `${base}/images/astrolabe.svg`
 </script>
 
 <style lang="sass">
@@ -26,7 +28,7 @@
     <nav>
         <a
             id="logo"
-            href="/">
+            href="{base}/">
             <img
                 class="main-icon"
                 src="{logoSrc}"
