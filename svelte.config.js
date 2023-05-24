@@ -24,7 +24,7 @@ const config = {
     prerender: {
         entries: [
             '*',
-            'src/routes/*'
+            '/src/routes/*'
         ]
     }
   },
