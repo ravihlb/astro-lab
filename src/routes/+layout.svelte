@@ -13,7 +13,6 @@
         font-family: sans-serif
         padding: 0 3em 3em
         margin: 0
-        font-weight: lighter
 
     :global(.span-mobile)
         @media screen and (max-width: 500px)
