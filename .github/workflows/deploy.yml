@@ -21,7 +21,7 @@ jobs:
 
       - name: build
         env:
-          BASE_PATH: '/astro-lab'
+          BASE_PATH: ${GITHUB_WORKSPACE}
         run: |
           yarn build
           touch build/.nojekyll
