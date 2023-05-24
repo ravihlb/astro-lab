@@ -22,7 +22,7 @@ jobs:
 
       - name: build
         env:
-          BASE_PATH: '/astro-lab'
+          BASE_PATH: 'astro-lab'
         run: |
           yarn build
           touch build/.nojekyll
