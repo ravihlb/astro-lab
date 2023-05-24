@@ -11,13 +11,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Install yarn
-        uses: yarn/setup@v2
-        with:
-          version: 8
+      - name: Install Node.js
+        uses: actions/setup-node@v3
 
-      - name: Install dependencies
-        run: yarn install
+      - name: Install yarn
+        run: corepack prepare yarn@stable --activate
 
       - name: build
         env:
