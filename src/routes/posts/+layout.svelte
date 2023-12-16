@@ -1,3 +1,5 @@
+<slot />
+
 <style lang="sass">
     :global(#cover)
         margin: 2em auto
@@ -10,7 +12,9 @@
     :global(h1, h2, h3)
         text-align: center
         color: var(--dark-purple)
+        line-height: 2em
+        margin-top: 1em
+
+    :global(p)
+        line-height: 1.5em
 </style>
-
-<slot />
-
