@@ -1,8 +1,5 @@
 https://github.com/ravihlb/astro-lab
 
-# Currently working on:
-- [ ] First article
-
 ## Developing - Quick Setup
 Once you've created a project and installed dependencies with `yarn` :
 
