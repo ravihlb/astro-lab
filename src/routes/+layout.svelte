@@ -1,6 +1,14 @@
 <script>
-    import Navbar from '../components/Navbar.svelte'
+  import Navbar from "../components/common/Navbar.svelte";
 </script>
+
+<html lang="en">
+  <title>Astrolab</title>
+  <Navbar />
+  <div class="container">
+    <slot />
+  </div>
+</html>
 
 <style lang="sass">
     :root
@@ -10,12 +18,13 @@
         color: var(--dark-purple)
 
     :global(body)
-        font-family: sans-serif
+        font-family: EB Garamond, ui-serif
+        font-weight: 400
+        font-size: 1.1em
 
     :global(.container)
         margin: 0 auto
-        max-width: 60em
-        padding: 0 10% 10%
+        max-width: 90%
 
         :global(.center-text)
             text-align: center
@@ -33,21 +42,8 @@
         :global(h3)
             font-size: 1.3em
 
-        :global(p img)
-            margin: 0 auto
-            display: block
-            height: 25em
-            max-width: 60em
-        
-        :global(.span-mobile)
-            @media screen and (max-width: 500px)
-                margin: 0 -15% 0 -15.3%
-
-        :global(img.span-mobile)
-            @media screen and (max-width: 500px)
-                border-radius: 0
-                margin: 0 -15% 0 -15.3%
-                width: 100vw
+        :global(code)
+            font-weight: 400
 
         :global(.youtube-video-container)
             height: 100%
@@ -69,11 +65,3 @@
                 width: 100%
 
 </style>
-
-<html lang="en">
-    <title>Astrolab</title>
-    <Navbar />
-    <div class="container">
-        <slot />
-    </div>
-</html>
