@@ -6,9 +6,9 @@
 
 <style lang="sass">
     nav
-        margin: 2% 5% 0 0
+        margin: 0 0 2% 5%
         text-align: right
-        float: right
+        float: left
 
     .main-icon
         width: 3.5em

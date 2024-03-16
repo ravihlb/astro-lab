@@ -1,11 +1,16 @@
 <script lang="typerscript">
     import cover from './img/cover.jpg'
     import notifications from './img/notifications-everywhere.jpg'
-    import MechanicalKeyboardYtEmbed from './MechanicalKeyboardYtEmbed.svelte'
     import slime from './img/slime.jpg'
-    import ImageContainer from '../../../components/common/ImageContainer.svelte'
+    import almostSolvedCube from './img/almost-solved-rubiks-cube.jpg'
+    import gnus from './img/gnus.jpg'
+    import embraceThePower from './img/embrace-the-power-of-the-command-line.png'
+    import scatteredCube from './img/scattered-rubiks-cube.jpg'
 
-    export const title = 'From Bloated Windows to dwm Arch Linux'
+    import MechanicalKeyboardYtEmbed from './MechanicalKeyboardYtEmbed.svelte'
+    import ImageContainer from '@components/common/ImageContainer.svelte'
+
+    export const title = 'From Bloated Windows to Minimal Arch Linux'
     export const subtitle = 'A Spectrum of Operating System Bareness'
 </script>
 
@@ -35,8 +40,9 @@ Anyway, I always liked to explore how technology works. Especially software. I e
 
 ## Why Minimalism
 
-The definition for minimalism found on Wiktionary is:
-" 1. (art) A style of art that emphasises extreme simplicity of form.
+The definition for minimalism found on [Wiktionary](https://en.wiktionary.org/wiki/minimalism) is:
+
+"(art) A style of art that emphasises extreme simplicity of form."
 
 I'd like to concentrate on the *simplicity of form* part of the definition. Simplicity of form should allow the user to concentrate on the most essential and useful parts of the system. Having to organize a few important things is a lot better than having to organize a myriad of different things that may be useful from time to time, but that most of the time, are there just bloating up the system.
 
@@ -54,6 +60,9 @@ Anyways, **why** are we using computers after all?
 Technically, smartphones are computers running a mobile-first operating system, but you know I'm really asking about desktop or laptop computers with their big monitors and flashy RGB gaming mechanical keyboards.
 
 <MechanicalKeyboardYtEmbed />
+<p class="caption">
+    It's a short one, I promise
+</p>
 
 The thing is, if you'll be working with computers for the rest of your foreseeable future, wouldn't it be best for you and your mental health to have the cleanest, most tranquil, distraction-free environment to flourish your professional skills and creativity, which are, really, the things that really matter when using these machines?
 
@@ -75,24 +84,24 @@ In this post I'll share some key points of my journey from knowing nothing about
 ## Learning to Windows 
 ### The GUI
 
-<!-- <img -->
-<!--     class="span-mobile" -->
-<!--     src="{slime}" -->
-<!--     alt="Hand squeezing orange gooey slime" -->
-<!-- /> -->
+<ImageContainer
+    src={slime}
+    alt="Hand squeezing orange, gooey slime"
+    caption={`
+        Source: 
+        <a href="https://www.pexels.com/photo/person-squeezing-orange-liquid-5875710/">
+            cottonbro studio on Pexels
+        </a>
+    `}
+/>
 
-<ImageContainer src={slime} alt="Hand squeezing orange, gooey slime" />
-
-Everyone has to start somewhere. As mentioned before, the great, great majority of people still use Windows as their daily driver OS. Sure, there's a lot of stuff to learn before you can weave your way through a Unix system and that *"spooky"* terminal! But a GUI system also has a certain (maybe smaller) learning curve.
+Everyone has to start somewhere. As mentioned before, the great, great majority of people still use Windows as their daily driver OS. Sure, there's a considerable learning curve before you can weave your way through a Unix system and that *"spooky"* terminal! But a GUI system also has one, maybe a bit smaller, but, still.
 
 A GUI system will show all of your options visually by default whereas a terminal-centric OS will show you only what you prompt it to show you. You could make a case that this just ends up being a hassle for new users, but it also makes them way more flexible. A UNIX-based system makes very few assumptions on how you want to use your system and this makes it possible for it to be incredibly versatile.
 
 When you first start using Windows, it looks like an almost completely solved Rubik's cube. Everything seems to be in its right place. Everything's already set up and ready to go and the only things you actually need to set up is your internet connection and maybe some programs you've gotten used to.
-<!---->
-<!-- <img -->
-<!--     src="{almost-solved-cube}" -->
-<!-- /> -->
-<!---->
+
+<ImageContainer src="{almostSolvedCube}" alt="An almost solved Rubik's cube, with only 2 blocks left to solve."/>
 
 This actually goes to the majority of Linux distros as well. It's just that under the GUI, it's much easier to customize and/or access the OS's internals.
 
@@ -111,7 +120,7 @@ At this point, you have some idea of what is possible to do with the command lin
 
 ## Entering the Herd - Welcome Linux
 
-[insert Gnu herd image here]
+<ImageContainer src={gnus} alt='Gnus standing in field in countryside in daylight'/>
 
 So, you decide to try out Ubuntu, since it's the Linux distro pretty much everyone is using at work. It comes with some stuff pre-installed. Your browser is Firefox but you're more used to Chrome and your company's [SaaS](https://en.wikipedia.org/wiki/Software_as_a_service) doesn't officially support Firefox anyway. You then look up how to install Chrome. There's a package installer with a curious file extension you never saw before, `.deb`. You look it up and find out it stands for "**Deb**ian software package", read a little bit about it and also find out that your newly installed distro is actually based on top of Debian, one of the oldest and most widely used Linux distributions.
 
@@ -121,8 +130,33 @@ You see that it's just a matter of downloading that `.deb` file and double-click
 ```
 sudo apt install google-chrome-stable
 ```
-
-[insert embrace the power of the command line meme here]
+<ImageContainer src={embraceThePower} alt='Darth Sirius from Star Wars, display text saying "EMBRACE THE POWER OF THE COMMAND LINE" ominously' />
 
 ## Above and Beyond - The Great Arch
 
+For me, the definitive [Arch Linux](https://archlinux.org/) "killer app" is the [AUR](https://wiki.archlinux.org/title/Arch_User_Repository), the community-curated centralized repository for practically anything you'd want to install on your machine. 
+
+It's so good people have started to create their own versions of `pacman` + AUR for debian-based distros: 
+    * [`makedeb`](https://github.com/makedeb) - *"A simplicity-focused packaging tool for Debian archives" (+ repo)*
+    * [`pacstall`](https://pacstall.dev/) - *"The AUR for Ubuntu" (+ package manager)*
+
+Although something tells me they're always going to be a bit behind the AUR itself.
+MPR, The `makedeb` Package Repository has around 760 packages and `pacstall` seems to have something close to 500.
+
+I'm sure they work great, but good luck getting even close to the **92637** packages the AUR has today.
+
+Anyways, Arch Linux just doesn't care about how "accessible" it is for beginners, meaning how _easy_ it is to install and get into.
+
+Until 2022 we didn't even have `archinstall`, the install script for faster installation. Even with this script, you still pretty much have to follow a guide, either from [Mental Outlaw on Youtube](https://www.youtube.com/watch?v=G-mLyrHonvU) or the [Arch Wiki](https://wiki.archlinux.org/) (which has pretty much everything you need to know about using Linux btw).
+
+(Arch) Linux is really minimal. You can choose everything and anything you want. Don't want/need a display manager? Fine, go ahead with your barebones TTY. Want to go offline-only? You don't even need to setup networking. Its configuration is very granular. Sure, you can always just go [Linux from scratch](https://linuxfromscratch.org/), but I'm not going down that rabbit hole ~~(yet)~~. I'm sure it's a great learning experience, though.
+
+<ImageContainer src={scatteredCube} alt="Scattered pieces of a disassembled Rubik's cube with a cleared pathway throgh the middle, leading to the core piece of the cube."/>
+
+When you install Arch by going the traditional route, your system is like a torn-down, pieces-scattered Rubik's Cube.
+
+I'm more than satisfied with the system-level customization and configuration options Arch enables and very happy with the plethora of resources the Arch Wiki hosts.
+
+If games ran as well on Linux as they do on Windows, I wouldn't ever bother installing it again. Fortunately, thanks to Valve's work on Proton and the Steam Deck, this is more and more becoming a reality and I'm really glad we're going down that road.
+
+And that's why I use Arch btw.
