@@ -25,11 +25,14 @@
         justify-content: center
 
         img
-            max-height: 80vw
-            max-width: 50vw
+            max-height: 40vw
+            max-width: 50rem
             border-radius: 1em
             flex: none
             height: 100%
             width: 100%
             align-items: center
+
+            @media screen and (max-width: 500px)
+                max-height: 90vw
 </style>

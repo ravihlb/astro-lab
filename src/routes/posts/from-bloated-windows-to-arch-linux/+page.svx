@@ -120,7 +120,16 @@ At this point, you have some idea of what is possible to do with the command lin
 
 ## Entering the Herd - Welcome Linux
 
-<ImageContainer src={gnus} alt='Gnus standing in field in countryside in daylight'/>
+<ImageContainer
+    src={gnus}
+    alt='Gnus standing in field in countryside in daylight'
+    caption={`
+        Source: 
+        <a href="https://www.pexels.com/photo/gnus-standing-in-field-in-countryside-in-daylight-6053002/">
+            Antony Trivet on Pexels
+        </a>
+    `}
+/>
 
 So, you decide to try out Ubuntu, since it's the Linux distro pretty much everyone is using at work. It comes with some stuff pre-installed. Your browser is Firefox but you're more used to Chrome and your company's [SaaS](https://en.wikipedia.org/wiki/Software_as_a_service) doesn't officially support Firefox anyway. You then look up how to install Chrome. There's a package installer with a curious file extension you never saw before, `.deb`. You look it up and find out it stands for "**Deb**ian software package", read a little bit about it and also find out that your newly installed distro is actually based on top of Debian, one of the oldest and most widely used Linux distributions.
 
