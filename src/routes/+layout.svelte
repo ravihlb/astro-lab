@@ -22,6 +22,17 @@
         font-weight: 400
         font-size: 1.1em
 
+        body a
+            color: #809fff
+
+        @media (prefers-color-scheme: dark)
+            color: #eee
+            background: #121212
+
+            body a
+                color: #809fff
+
+
     :global(.container)
         margin: 0 auto
         max-width: 85%

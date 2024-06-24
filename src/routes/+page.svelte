@@ -14,7 +14,7 @@
     programming, tech and some miscelaneous interesting stuff.
   </p>
 
-  <h2 class="accent-color">Posts</h2>
+  <h2>Posts</h2>
 
   <PostsList />
 </html>

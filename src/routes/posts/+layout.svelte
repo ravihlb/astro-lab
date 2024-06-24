@@ -8,7 +8,6 @@
     :global(h1, h2, h3)
         font-weight: 900
         text-align: center
-        color: var(--dark-purple)
         line-height: 1.6em
         margin-top: 1em
 
