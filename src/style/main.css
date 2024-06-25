@@ -72,7 +72,8 @@ code {
     background-color: var(--color-gray-bg);
 
     @media screen and (prefers-color-scheme: dark) {
-      background-color: var(--color-gray-bg-dark);
+        color: var(--accent-color-primary);
+        background-color: var(--color-gray-bg-dark);
     }
 }
 
