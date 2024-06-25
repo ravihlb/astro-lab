@@ -3,6 +3,7 @@ body {
     font-weight: 400;
     font-size: 20px;
     background-color: #efe6d7;
+    color: var(--default-text-color);
 
     @media screen and (prefers-color-scheme: dark) {
         color: #eee;
