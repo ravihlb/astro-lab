@@ -1,6 +1,4 @@
 <html lang="en" class="main">
-  <section id="section-about-me">
-
     <p>
       Hi! my name's Ravi
       <br />
@@ -13,15 +11,26 @@
     </p>
 
     <div id="socials">
+      <ul>
 
-      <div id="github">
-        <a href="https://github.com/ravihlb" target="_blank">Github</a>
-      </div>
+        <li>
+          <a href="https://github.com/ravihlb" target="_blank">
+            <div id="github">
+              Github
+            </div>
+          </a>
+        </li>
 
-      <div id="linkedin">
-        <a href="https://www.linkedin.com/in/ravihlb/" target="_blank">LinkedIn</a>
-      </div>
+        <li>
+          <a href="https://www.linkedin.com/in/ravihlb/" target="_blank">
+            <div id="linkedin">
+              LinkedIn
+            </div>
+          </a>
+        </li>
+
+      </ul>
+
     </div>
 
-  </section>
 </html>
