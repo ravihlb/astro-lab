@@ -29,4 +29,4 @@ require("lspconfig").css_variables.setup({
 
 Other options other than `filetypes` can also be overriden.
 
-A full of LSPs and their respective options supported by `lspconfig` can be found by running `:help lspconfig-all`, which is really useful for finding and overriding their default settings.
+A full list of LSPs and their respective options supported by `lspconfig` can be found by running `:help lspconfig-all`, which is really useful for finding and overriding their default settings.

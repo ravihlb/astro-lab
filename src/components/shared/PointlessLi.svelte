@@ -4,7 +4,7 @@
 
 <html lang="en">
     <li>
-        {@html content}
+        {@html `<html lang="en"> ${content} </html>`}
     </li>
 </html>
 
