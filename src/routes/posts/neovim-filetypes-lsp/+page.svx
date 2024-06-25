@@ -1,0 +1,28 @@
+<script lang="typescript">
+    export const title = 'How to set which filetypes LSPs are run on in Neovim'
+</script>
+
+# {title}
+
+You can use the `filetypes` config within `lspconfig.lsp_name.setup({...})` to override the default filetypes on which a given LSP runs on.
+
+For example, in my case I wanted the `css_variables` LSP to run on `vue` files, which it doesn't by default.
+
+This can be done by overriding the `filetypes` option on the setup function call:
+
+```lua
+local lspconfig = require("lspconfig")
+
+lspconfig.css_variables.setup({
+	filetypes = {
+		"css",
+		"scss",
+		"less",
+		"vue",
+	},
+})
+```
+
+Other options other than `filetypes` can also be overriden.
+
+A full of LSPs and their respective options supported by `lspconfig` can be found by running `:help lspconfig-all`, which is really useful for finding and overriding their default settings.
