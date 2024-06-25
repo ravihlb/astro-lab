@@ -16,25 +16,20 @@
 
     <div>
         <ul>
-
             <a href="https://github.com/ravihlb" target="_blank">
-                <PointlessLi content={
-                `
-                <div id="github">
-                    Github
-                </div>
-                `
-                } />
+                <li>
+                    <div id="github">
+                        Github
+                    </div>
+                </li>
             </a>
 
             <a href="https://www.linkedin.com/in/ravihlb/" target="_blank">
-                <PointlessLi content={
-                `
-                <div id="linkedin">
-                    LinkedIn
-                </div>
-                `
-                } />
+                <li>
+                    <div id="linkedin">
+                        LinkedIn
+                    </div>
+                 </li>
             </a>
 
         </ul>
