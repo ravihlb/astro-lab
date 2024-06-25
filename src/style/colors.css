@@ -2,13 +2,11 @@
     --accent-color-primary: #d07319;
     --default-text-color: black;
 
-    --color-gray-bg: #262626;
+    --color-gray-bg: #8c7c61;
+    --color-gray-bg-dark: #19223e;
+    --color-gray-bg-darker: #1b2032;
 }
 
 .accent-color {
     color: var(--accent-color-primary);
-}
-
-.gray-bg {
-    background-color: var(--color-gray-bg)
 }

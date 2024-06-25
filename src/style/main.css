@@ -65,12 +65,35 @@ li {
 code {
     font-weight: 400;
     font-family: monospace;
-    background: #c2c3c6;
-    font-size: 1rem;
+    word-wrap: break-word;
+    box-decoration-break: clone;
+    padding: .1rem .3rem .2rem;
+    border-radius: .2rem;
+    background-color: var(--color-gray-bg);
 
     @media screen and (prefers-color-scheme: dark) {
-        background: #242424;
+      background-color: var(--color-gray-bg-dark);
     }
+}
+
+p code {
+    font-size: 1rem;
+}
+
+pre code {
+  display: block;
+  background: none;
+  white-space: pre;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+  min-width: 100px;
+  border-radius: 0.5rem;
+  padding: .3rem;
+  background-color: var(--color-gray-bg);
+
+  @media screen and (prefers-color-scheme: dark) {
+      background-color: var(--color-gray-bg-darker);
+  }
 }
 
 .caption {

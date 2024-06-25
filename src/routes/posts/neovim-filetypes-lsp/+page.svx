@@ -17,16 +17,14 @@ For example, in my case I wanted the `css_variables` LSP to run on `vue` files, 
 This can be done by overriding the `filetypes` option on the setup function call:
 
 ```lua
-local lspconfig = require("lspconfig")
-
-lspconfig.css_variables.setup({
-        filetypes = {
-        "css",
-        "scss",
-        "less",
-        "vue",
-        },
-        })
+require("lspconfig").css_variables.setup({
+    filetypes = {
+    "css",
+    "scss",
+    "less",
+    "vue",
+    },
+})
 ```
 
 Other options other than `filetypes` can also be overriden.
