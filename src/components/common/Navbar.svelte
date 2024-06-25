@@ -4,37 +4,42 @@
     const logoSrc = `${base}/images/astrolabe.svg`
 </script>
 
-<style lang="sass">
-    nav
-        display: flex
-        align-items: center
+<style lang="css">
+    nav {
+        display: flex;
+        align-items: center;
+        max-width: 85%;
+        width: 100%;
+        margin: auto;
+        padding-top: 1em;
+        flex-direction: row;
+    }
 
-        max-width: 85%
-        width: 100%
-        margin: auto
-        padding-top: 1em
-        flex-direction: row
+    nav ul {
+        display: flex;
+        padding: 0;
+    }
 
-        ul
-            display: flex
-            padding: 0
+    nav li {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        vertical-align: middle;
+    }
 
-        li
-            display: inline-block
-            position: relative
-            cursor: pointer
-            vertical-align: middle
+    nav li:not(:last-of-type) {
+            margin-right: 1.5em;
+    }
 
-            &:not(:last-of-type)
-                margin-right: 1.5em
+    #about {
+        vertical-align: middle;
+        padding-top: 1.4em;
+    }
 
-        #about
-            vertical-align: middle
-            padding-top: 1.4em
-
-    .main-icon
-        width: 3.5em
-        padding-left: 5%
+    .main-icon {
+        width: 3.5em;
+        padding-left: 5%;
+    }
 
 </style>
 

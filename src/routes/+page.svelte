@@ -19,7 +19,8 @@
   <PostsList />
 </html>
 
-<style lang="sass">
-  h1
-    color: var(--default-text-color)
+<style lang="css">
+    h1 {
+        color: var(--default-text-color);
+    }
 </style>

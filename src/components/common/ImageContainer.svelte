@@ -14,25 +14,28 @@
     </figure>
 </html>
 
-<style lang="sass">
-    .center
-        margin: 0 auto
-        height: fit-content
-        width: fit-content
-        display: block
+<style lang="css">
+    .center {
+        margin: 0 auto;
+        height: fit-content;
+        width: fit-content;
+        display: block;
+        overflow: hidden;
+        justify-content: center;
+    }
 
-        overflow: hidden
-        justify-content: center
+    .center img {
+        max-height: 40vw;
+        max-width: 50rem;
+        border-radius: 1em;
+        flex: none;
+        height: 100%;
+        width: 100%;
+        align-items: center;
 
-        img
-            max-height: 40vw
-            max-width: 50rem
-            border-radius: 1em
-            flex: none
-            height: 100%
-            width: 100%
-            align-items: center
+        @media screen and (max-width: 500px) {
+            max-height: 90vw;
+        }
+    }
 
-            @media screen and (max-width: 500px)
-                max-height: 90vw
 </style>
