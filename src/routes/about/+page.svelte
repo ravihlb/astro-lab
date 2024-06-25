@@ -1,9 +1,9 @@
 <html lang="en" class="main">
     <p>
-      Hi! my name's Ravi
+      Hi! my name's Ravi.
       <br />
       <br />
-      I am a Software QA Engineer from Brazil aspiring to become a full time [backend, frontend, software, game] developer
+      I am a Software QA Engineer from Brazil aspiring to become a full time [backend, frontend, software, game] developer.
       <br />
       <br />
       Here's where you can find my stuff:
