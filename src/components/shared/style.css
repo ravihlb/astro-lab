@@ -1,0 +1,115 @@
+:root {
+  --accent-color-primary: #d07319;
+  --default-text-color: black;
+}
+
+.accent-color {
+  color: var(--accent-color-primary);
+}
+
+body {
+  font-family: Fantasque Sans Mono, monospace;
+  font-weight: 400;
+  font-size: 20px;
+  background-color: #efe6d7;
+
+  @media screen and (prefers-color-scheme: dark) {
+    color: #eee;
+    background: #121212;
+    --default-text-color: #eee;
+  }
+
+}
+
+body a {
+  background: #404040;
+  color: #809fff;
+}
+
+
+a {
+  background: #161616;
+  color: #809fff;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 60rem;
+
+  @media screen and (max-width: 500px) {
+    margin: 0 auto;
+    max-width: 21rem;
+  }
+
+}
+
+.center-text {
+  text-align: center;
+}
+
+li::marker {
+  font-size: 1.2em;
+  margin-right: 0px;
+}
+
+h1 {
+  color: var(--accent-color-primary);
+  font-size: 2em;
+}
+
+h2 {
+  color: var(--accent-color-primary);
+  font-size: 1.5em;
+}
+
+h3 {
+  color: var(--accent-color-primary);
+  font-size: 1.3em;
+}
+
+li {
+  font-size: 1.2rem;
+}
+
+code {
+  font-weight: 400;
+  font-family: monospace;
+  background: #c2c3c6;
+  font-size: 1rem;
+
+  @media screen and (prefers-color-scheme: dark) {
+    background: #242424;
+  }
+}
+
+.caption {
+  display: block;
+  opacity: 0.9;
+  font-size: 0.9rem;
+  font-style: italic;
+  justify-content: center;
+  margin-left: 1em;
+}
+
+.youtube-video-container {
+  height: 100%;
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+  text-align: center;
+
+  @media screen and (max-width: 500px) {
+    height: 13vw;
+  }
+
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}

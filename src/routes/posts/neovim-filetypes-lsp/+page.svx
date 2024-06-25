@@ -1,8 +1,14 @@
 <script lang="typescript">
-    export const title = 'How to set which filetypes LSPs are run on in Neovim'
+    import props from './props'
+
+    const { title, publicationDate } = props
 </script>
 
 # {title}
+
+**Published on {publicationDate}**
+
+<br />
 
 You can use the `filetypes` config within `lspconfig.lsp_name.setup({...})` to override the default filetypes on which a given LSP runs on.
 
@@ -14,13 +20,13 @@ This can be done by overriding the `filetypes` option on the setup function call
 local lspconfig = require("lspconfig")
 
 lspconfig.css_variables.setup({
-	filetypes = {
-		"css",
-		"scss",
-		"less",
-		"vue",
-	},
-})
+        filetypes = {
+        "css",
+        "scss",
+        "less",
+        "vue",
+        },
+        })
 ```
 
 Other options other than `filetypes` can also be overriden.

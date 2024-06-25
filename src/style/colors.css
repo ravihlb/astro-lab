@@ -1,0 +1,14 @@
+:root {
+    --accent-color-primary: #d07319;
+    --default-text-color: black;
+
+    --color-gray-bg: #262626;
+}
+
+.accent-color {
+    color: var(--accent-color-primary);
+}
+
+.gray-bg {
+    background-color: var(--color-gray-bg)
+}

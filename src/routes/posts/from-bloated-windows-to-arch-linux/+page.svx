@@ -1,17 +1,18 @@
 <script lang="typerscript">
-    import cover from './img/cover.jpg'
-    import notifications from './img/notifications-everywhere.jpg'
-    import slime from './img/slime.jpg'
     import almostSolvedCube from './img/almost-solved-rubiks-cube.jpg'
-    import gnus from './img/gnus.jpg'
+    import cover from './img/cover.jpg'
     import embraceThePower from './img/embrace-the-power-of-the-command-line.png'
+    import gnus from './img/gnus.jpg'
+    import notifications from './img/notifications-everywhere.jpg'
     import scatteredCube from './img/scattered-rubiks-cube.jpg'
+    import slime from './img/slime.jpg'
 
     import MechanicalKeyboardYtEmbed from './MechanicalKeyboardYtEmbed.svelte'
-    import ImageContainer from '@components/common/ImageContainer.svelte'
+    import ImageContainer from '@components/shared/ImageContainer.svelte'
 
-    const title = 'From Bloated Windows to Minimal Arch Linux'
-    const subtitle = 'A Spectrum of Operating System Bareness'
+    import props from './props'
+
+    const { title, subtitle, publicationDate } = props
 </script>
 
 <title>{title}</title>
@@ -19,9 +20,12 @@
 # { title }
 ## { subtitle }
 
+
 <ImageContainer src={cover} alt="A completely disassembled Rubik's Cube, its colored pieces lying scattered atop a white background" />
 
-<br>
+**Published on {publicationDate}**
+
+<br />
 
 Nowadays, [about 69% of desktop computer users are using Windows](https://gs.statcounter.com/os-market-share/desktop/worldwide/#monthly-202211-202311).
 Windows is a system that seems primarily concerned with:
