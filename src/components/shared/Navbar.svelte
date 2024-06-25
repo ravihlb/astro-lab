@@ -34,7 +34,7 @@
             margin-right: 1.5em;
     }
 
-    #about {
+    .link {
         vertical-align: middle;
         padding-top: 1.4em;
     }
@@ -67,8 +67,14 @@
             </li>
 
             <li>
-                <div id="about">
+                <div id="about" class="link">
                     <a href="/about">/about</a>
+                </div>
+            </li>
+
+            <li>
+                <div id="code" class="link">
+                    <a href="https://github.com/ravihlb/astro-lab" target="_blank">/code</a>
                 </div>
             </li>
         </ul>
