@@ -1,9 +1,11 @@
 <script lang="ts">
-    // TODO
-    // find out how to get post title list
-    const questForMinimalism = 'From Bloated Windows to Minimal Arch Linux'
+    import posts from '@/src/constants/posts'
 </script>
 
 <html lang="eng">
-    <li><a href="./posts/from-bloated-windows-to-arch-linux">{questForMinimalism}</a></li>
+    <div>
+        {#each posts as props}
+            <li><a href="{props.URL}">{props.title}</a> - {props.publicationDate}</li>
+        {/each}
+    </div>
 </html>
