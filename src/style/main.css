@@ -6,7 +6,8 @@ body {
 
     @media screen and (prefers-color-scheme: dark) {
         color: #eee;
-        background: #121212;
+        background-color: #121212;
+
         --default-text-color: #eee;
     }
 
