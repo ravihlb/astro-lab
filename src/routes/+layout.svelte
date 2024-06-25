@@ -21,7 +21,7 @@
     :global(body)
         font-family: Fantasque Sans Mono, monospace
         font-weight: 400
-        font-size: 16px
+        font-size: 20px
 
         :global(body a)
             background: #404040
