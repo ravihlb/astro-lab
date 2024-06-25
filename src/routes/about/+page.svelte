@@ -10,7 +10,7 @@
       <br />
     </p>
 
-    <div id="socials">
+    <div>
       <ul>
 
         <li>
