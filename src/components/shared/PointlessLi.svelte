@@ -2,11 +2,12 @@
     import type { PostProperties } from "@/src/constants/posts"
 
     export let props: PostProperties
+    const { URL } = props
 </script>
 
 <html lang="en">
     <li>
-        <a href="{props.URL}">{props.title}</a>
+        <a href="{URL}">{props.title}</a>
         <br />
         {props.publicationDate}
     </li>
