@@ -12,26 +12,29 @@
 
 <style lang="sass">
     :root
-        --dark-purple: #5d1f7c
+      --accent-purple: #d07319
+      --default-text-color: black
 
     :global(.accent-color)
-        color: var(--dark-purple)
+        color: var(--accent-purple)
 
     :global(body)
-        font-family: EB Garamond, ui-serif
+        font-family: Fantasque Sans Mono, monospace
         font-weight: 400
-        font-size: 1.1em
+        font-size: 16px
 
-        body a
+        :global(body a)
+            background: #404040
             color: #809fff
 
         @media (prefers-color-scheme: dark)
             color: #eee
             background: #121212
+            --default-text-color: #eee
 
-            body a
+            :global(a)
+                background: #161616
                 color: #809fff
-
 
     :global(.container)
         margin: 0 auto
@@ -45,16 +48,29 @@
             margin-right: 0px
 
         :global(h1)
+            color: var(--accent-purple)
             font-size: 2em
+            font-family: monospace
 
         :global(h2)
+            color: var(--accent-purple)
             font-size: 1.5em
+            font-family: monospace
 
         :global(h3)
+            color: var(--accent-purple)
             font-size: 1.3em
+            font-family: monospace
+
+        :global(a)
+            font-family: monospace
+
+        :global(li)
+            font-size: 1.2rem
 
         :global(code)
             font-weight: 400
+            font-family: monospace
 
         :global(.caption)
             display: block

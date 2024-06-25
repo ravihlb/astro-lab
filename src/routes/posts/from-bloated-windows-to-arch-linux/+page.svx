@@ -10,9 +10,11 @@
     import MechanicalKeyboardYtEmbed from './MechanicalKeyboardYtEmbed.svelte'
     import ImageContainer from '@components/common/ImageContainer.svelte'
 
-    export const title = 'From Bloated Windows to Minimal Arch Linux'
-    export const subtitle = 'A Spectrum of Operating System Bareness'
+    const title = 'From Bloated Windows to Minimal Arch Linux'
+    const subtitle = 'A Spectrum of Operating System Bareness'
 </script>
+
+<title>{title}</title>
 
 # { title }
 ## { subtitle }
@@ -89,7 +91,7 @@ In this post I'll share some key points of my journey from knowing nothing about
     alt="Hand squeezing orange, gooey slime"
     caption={`
         Source: 
-        <a href="https://www.pexels.com/photo/person-squeezing-orange-liquid-5875710/">
+        <a href="https://www.pexels.com/photo/person-squeezing-orange-liquid-5875710/" target="_blank">
             cottonbro studio on Pexels
         </a>
     `}
@@ -125,7 +127,7 @@ At this point, you have some idea of what is possible to do with the command lin
     alt='Gnus standing in field in countryside in daylight'
     caption={`
         Source: 
-        <a href="https://www.pexels.com/photo/gnus-standing-in-field-in-countryside-in-daylight-6053002/">
+        <a href="https://www.pexels.com/photo/gnus-standing-in-field-in-countryside-in-daylight-6053002/" target="_blank">
             Antony Trivet on Pexels
         </a>
     `}
