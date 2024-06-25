@@ -12,12 +12,12 @@
 
 <style lang="css">
     :root {
-        --accent-purple: #d07319;
+        --accent-color-primary: #d07319;
         --default-text-color: black;
     }
 
     :global(.accent-color) {
-        color: var(--accent-purple);
+        color: var(--accent-color-primary);
     }
 
     :global(body) {
@@ -30,6 +30,7 @@
             background: #121212;
             --default-text-color: #eee;
         }
+
     }
 
     :global(body a) {
@@ -45,7 +46,13 @@
 
     :global(.container) {
         margin: 0 auto;
-        max-width: 85%;
+        max-width: 60rem;
+
+        @media screen and (max-width: 500px) {
+            margin: 0 auto;
+            max-width: 21rem;
+        }
+
     }
 
     :global(.center-text) {
@@ -58,25 +65,18 @@
     }
 
     :global(h1) {
-        color: var(--accent-purple);
+        color: var(--accent-color-primary);
         font-size: 2em;
-        font-family: monospace;
     }
 
     :global(h2) {
-        color: var(--accent-purple);
+        color: var(--accent-color-primary);
         font-size: 1.5em;
-        font-family: monospace;
     }
 
     :global(h3) {
-        color: var(--accent-purple);
+        color: var(--accent-color-primary);
         font-size: 1.3em;
-        font-family: monospace;
-    }
-
-    :global(a) {
-        font-family: monospace;
     }
 
     :global(li) {

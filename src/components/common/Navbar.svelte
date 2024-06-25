@@ -8,11 +8,14 @@
     nav {
         display: flex;
         align-items: center;
-        max-width: 85%;
+
         width: 100%;
         margin: auto;
         padding-top: 1em;
         flex-direction: row;
+
+        margin: 0 auto;
+        max-width: 60rem;
     }
 
     nav ul {
