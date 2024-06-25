@@ -19,10 +19,10 @@ This can be done by overriding the `filetypes` option on the setup function call
 ```lua
 require("lspconfig").css_variables.setup({
     filetypes = {
-    "css",
-    "scss",
-    "less",
-    "vue",
+        "css",
+        "scss",
+        "less",
+        "vue",
     },
 })
 ```
