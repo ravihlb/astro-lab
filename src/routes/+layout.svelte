@@ -24,6 +24,7 @@
         font-family: Fantasque Sans Mono, monospace;
         font-weight: 400;
         font-size: 20px;
+        background-color: #efe6d7;
 
         @media screen and (prefers-color-scheme: dark) {
             color: #eee;
@@ -86,6 +87,11 @@
     :global(code) {
         font-weight: 400;
         font-family: monospace;
+        background: #c2c3c6;
+
+        @media screen and (prefers-color-scheme: dark) {
+            background: #242424;
+        }
     }
 
     :global(.caption) {
