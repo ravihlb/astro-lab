@@ -12,7 +12,7 @@
 
     import props from './props'
 
-    const { title, subtitle, publicationDate } = props
+    const { title, subtitle, publicationDate, authors } = props
 </script>
 
 <title>{title}</title>
@@ -25,6 +25,7 @@
 
 **Published on {publicationDate}**
 
+**Authored by:** <span>{authors}</span>
 <br />
 
 Nowadays, [about 69% of desktop computer users are using Windows](https://gs.statcounter.com/os-market-share/desktop/worldwide/#monthly-202211-202311).

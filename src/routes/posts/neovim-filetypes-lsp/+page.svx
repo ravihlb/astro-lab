@@ -1,12 +1,14 @@
 <script lang="typescript">
     import props from './props'
 
-    const { title, publicationDate } = props
+    const { title, publicationDate, authors } = props
+    const authorsList = authors.join(', ')
 </script>
 
 # {title}
 
 **Published on {publicationDate}**
+**Authored by:** <span>{authorsList}</span>
 
 <br />
 

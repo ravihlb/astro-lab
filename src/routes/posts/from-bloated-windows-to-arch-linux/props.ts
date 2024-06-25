@@ -7,6 +7,7 @@ const publicationDate = getDateString('Mar 16 17:47:16 2024')
 
 const propsPost0: PostProperties = {
     title,
+    authors: ['ravihlb'],
     subtitle,
     publicationDate,
     URL: 'posts/from-bloated-windows-to-arch-linux'

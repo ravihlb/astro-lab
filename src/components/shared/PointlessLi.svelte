@@ -1,10 +1,14 @@
-<script lang="typescript">
-    export let content = ''
+<script lang="ts">
+    import type { PostProperties } from "@/src/constants/posts"
+
+    export let props: PostProperties
 </script>
 
 <html lang="en">
     <li>
-        {@html `<html lang="en"> ${content} </html>`}
+        <a href="{props.URL}">{props.title}</a>
+        <br />
+        {props.publicationDate}
     </li>
 </html>
 

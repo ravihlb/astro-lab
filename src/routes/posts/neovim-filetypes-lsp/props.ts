@@ -5,6 +5,7 @@ const publicationDate = getDateString('2024-06-25 05:22')
 
 const propsPost1 = {
     title,
+    authors: ['ravihlb'],
     publicationDate,
     URL: 'posts/neovim-filetypes-lsp'
 }

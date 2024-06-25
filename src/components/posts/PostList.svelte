@@ -5,14 +5,8 @@
 
 <html lang="eng">
     <div>
-        {#each posts as props}
-            <PointlessLi content={
-                `
-                    <a href="${props.URL}">${props.title}</a>
-                    <br />
-                    ${props.publicationDate}
-                `
-            } />
+        {#each posts as postProps}
+            <PointlessLi props = { postProps } />
         {/each}
     </div>
 </html>
