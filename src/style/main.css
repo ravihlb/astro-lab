@@ -94,6 +94,10 @@ pre code {
   @media screen and (prefers-color-scheme: dark) {
       background-color: var(--color-gray-bg-darker);
   }
+
+  @media screen and (max-width: 500px) {
+      overflow: scroll;
+  }
 }
 
 .caption {
