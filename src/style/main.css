@@ -7,9 +7,7 @@ body {
 
     @media screen and (prefers-color-scheme: dark) {
         background-color: var(--color-bg-dark);
-
-        --default-text-color: #eee;
-        color: var(--default-text-color);
+        color: var(--default-text-color-dark);
     }
 
 }
