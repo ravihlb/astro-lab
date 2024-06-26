@@ -1,41 +1,47 @@
 <script>
-    import { base } from "$app/paths";
+    import { base } from '$app/paths';
 
     const logoSrc = `${base}/images/astrolabe.svg`
 </script>
 
 <html lang="en">
     <nav>
-        <ul>
-            <li>
-                <a
-                    id="logo"
-                    href="{base}/">
-                    <div id="main-logo">
-                        <img
-                        class="main-icon"
-                        src="{logoSrc}"
-                        alt="Illustration of an astrolabe, a medieval instrument that was once used to 
-                        determine the altitude of the sun or other celestial bodies, 
-                        often for navigation."
-                        >
-                    </div>
-                </a>
+        <div class="header-item">
+            <ul>
+                <li>
+                    <a
+                        id="logo"
+                        href="{base}/">
+                        <div id="main-logo">
+                            <img
+                            class="main-icon"
+                            src="{logoSrc}"
+                            alt="Illustration of an astrolabe, a medieval instrument that was once used to 
+                            determine the altitude of the sun or other celestial bodies, 
+                            often for navigation."
+                            >
+                        </div>
+                    </a>
 
-            </li>
+                </li>
 
-            <li>
-                <div id="about" class="link">
-                    <a href="/about">/about </a>
-                </div>
-            </li>
+                <li>
+                    <a href="/about">
+                        <div id="about" class="link">
+                            /about 
+                        </div>
+                    </a>
+                </li>
 
-            <li>
-                <div id="code" class="link">
-                    <a href="https://github.com/ravihlb/astro-lab" target="_blank">/code ⤴</a>
-                </div>
-            </li>
-        </ul>
+                <li>
+                    <a href="https://github.com/ravihlb/astro-lab" target="_blank">
+                        <div id="code" class="link">
+                            /code ⤴
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </nav>
 </html>
 
@@ -51,28 +57,37 @@
 
         margin: 0 auto;
         max-width: 60rem;
-    }
 
-    nav ul {
-        display: flex;
-        padding: 0;
-    }
+        & .header-item {
+            line-height: 1rem;
+            vertical-align: middle;
 
-    nav li {
-        display: inline-block;
-        position: relative;
-        cursor: pointer;
-        vertical-align: middle;
-        align-self: center;
-    }
+            &:not(:last-of-type) {
+                margin-right: 1.5em;
+            }
+        }
 
-    nav li:not(:last-of-type) {
-            margin-right: 1.5em;
-    }
+        & ul {
+            display: flex;
+            padding: 0;
 
-    .link {
-        vertical-align: middle;
-        padding-top: 1.4em;
+            & li {
+                display: inline-block;
+                position: relative;
+                cursor: pointer;
+                align-self: center;
+            }
+
+            & li:not(:last-of-type) {
+                margin-right: 1.5em;
+            }
+        }
+
+        & .float-right {
+            position: relative;
+            float: right;
+        }
+
     }
 
     .main-icon {
