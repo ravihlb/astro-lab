@@ -22,5 +22,9 @@
 <style lang="css">
     h1 {
         color: var(--default-text-color);
+
+        @media screen and (prefers-color-scheme: dark) {
+            color: var(--default-text-color-dark);
+        }
     }
 </style>
