@@ -2,9 +2,12 @@
     --accent-color-primary: #d07319;
     --default-text-color: black;
 
-    --color-gray-bg: #8c7c61;
-    --color-gray-bg-dark: #19223e;
-    --color-gray-bg-darker: #1b2032;
+    --color-bg-default: #e5d4b9;
+    --color-bg-dark: #121212;
+
+    --color-code-bg: #d0a27678;
+    --color-code-bg-dark: #19223e;
+    --color-code-bg-darker: #1b2032;
 }
 
 .accent-color {
