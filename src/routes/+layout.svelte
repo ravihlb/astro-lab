@@ -1,12 +1,5 @@
 <script>
-    import { onMount } from 'svelte'
     import Navbar from '@components/shared/Navbar.svelte'
-    import ColorSchemeManager from '@/src/utils/ColorSchemeManager'
-
-    onMount(async () => {
-        ColorSchemeManager.initializeThemeStorage()
-    })
-
 </script>
 
 <html lang="en">
