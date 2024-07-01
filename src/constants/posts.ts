@@ -1,15 +1,11 @@
-import propsPost0 from '../routes/posts/from-bloated-windows-to-arch-linux/props'
-import propsPost1 from '../routes/posts/neovim-filetypes-lsp/props'
+import id1 from '@/src/routes/posts/neovim-filetypes-lsp/props'
+import id0 from '@/src/routes/posts/from-bloated-windows-to-arch-linux/props'
 
-export type PostProperties = {
-    title: string,
-    subtitle?: string,
-    authors: string[],
-    publicationDate: string,
-    URL: string
-}
+import type PostProperties from '@/src/shared/types/PostProperties'
 
-const posts: PostProperties[] = []
-posts.push(propsPost1, propsPost0)
+const posts: PostProperties[] = [
+  id1,
+  id0,
+]
 
 export default posts

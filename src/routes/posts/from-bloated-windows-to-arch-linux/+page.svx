@@ -1,31 +1,27 @@
-<script lang="typerscript">
+<script lang="ts">
     import almostSolvedCube from './img/almost-solved-rubiks-cube.jpg'
-    import cover from './img/cover.jpg'
     import embraceThePower from './img/embrace-the-power-of-the-command-line.png'
     import gnus from './img/gnus.jpg'
     import notifications from './img/notifications-everywhere.jpg'
     import scatteredCube from './img/scattered-rubiks-cube.jpg'
     import slime from './img/slime.jpg'
+    import cover from './img/cover.jpg'
 
     import MechanicalKeyboardYtEmbed from './MechanicalKeyboardYtEmbed.svelte'
     import ImageContainer from '@components/shared/ImageContainer.svelte'
+    import PostInfo from '@components/posts/PostInfo.svelte'
+    import PostTitles from '@components/posts/PostTitles.svelte'
 
     import props from './props'
 
-    const { title, subtitle, publicationDate, authors } = props
+    const { title, subtitle, publicationDate, authors, coverImg } = props
 </script>
 
-<title>{title}</title>
-
-# { title }
-## { subtitle }
-
-
+<PostTitles props={props} />
+<br />
 <ImageContainer src={cover} alt="A completely disassembled Rubik's Cube, its colored pieces lying scattered atop a white background" />
-
-**Published on {publicationDate}**
-
-**Authored by:** <span>{authors}</span>
+<br />
+<PostInfo props={props} />
 <br />
 
 Nowadays, [about 69% of desktop computer users are using Windows](https://gs.statcounter.com/os-market-share/desktop/worldwide/#monthly-202211-202311).

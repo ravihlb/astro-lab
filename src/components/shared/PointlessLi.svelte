@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { PostProperties } from "@/src/constants/posts"
+    import type { PostProperties } from "@/src/shared/types/PostProperties"
 
     export let props: PostProperties
     const { URL } = props

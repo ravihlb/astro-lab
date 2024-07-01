@@ -1,4 +1,4 @@
-import type { PostProperties } from '@/src/constants/posts'
+import type PostProperties from '@/src/shared/types/PostProperties'
 import { getDateString } from '@/src/utils/dateutils'
 
 const title = 'From Bloated Windows to Minimal Arch Linux'
