@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Fantasque Sans Mono';
     font-display: swap;
-    src: local('Fantasque Sans Mono'), url(./fonts/FantasqueSansMono-Regular.otf), format("opentype");
+    src: local('Fantasque Sans Mono'), url(./fonts/FantasqueSansMono-Regular.otf);
 }
 
 body {
@@ -64,9 +64,9 @@ li {
 }
 
 code {
+    font-size: 1rem;
     font-weight: 400;
-    font-family: monospace;
-    word-wrap: break-word;
+    text-wrap: pretty;
     box-decoration-break: clone;
     padding: .1rem .3rem .2rem;
     border-radius: .2rem;
@@ -78,19 +78,14 @@ code {
     }
 }
 
-p code {
-    font-size: 1rem;
-}
-
 pre code {
   display: block;
-  background: none;
   white-space: pre;
   -webkit-overflow-scrolling: touch;
   max-width: 100%;
   min-width: 100px;
   border-radius: 0.5rem;
-  padding: .3rem;
+  padding: 0.8rem 1rem;
   background-color: var(--color-code-bg);
 
   @media screen and (prefers-color-scheme: dark) {
