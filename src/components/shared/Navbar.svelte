@@ -26,7 +26,7 @@
                 </li>
 
                 <li>
-                    <a href="/about">
+                    <a href="{base}/about">
                         <div id="about" class="link">
                             /about 
                         </div>

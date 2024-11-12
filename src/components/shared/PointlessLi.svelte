@@ -1,5 +1,6 @@
 <script lang="ts">
     import type { PostProperties } from "@/src/shared/types/PostProperties"
+    import { base } from '$app/paths'
 
     export let props: PostProperties
     const { URL } = props
@@ -7,7 +8,7 @@
 
 <html lang="en">
     <li>
-        <a href="{URL}">{props.title}</a>
+        <a href="{base}/{URL}">{props.title}</a>
         <br />
         {props.publicationDate}
     </li>
