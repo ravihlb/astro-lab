@@ -4,7 +4,7 @@
     src: local('Fantasque Sans Mono'), url(./fonts/FantasqueSansMono-Regular.otf);
 }
 
-body {
+html {
     font-family: 'Fantasque Sans Mono', monospace;
     font-weight: 400;
     font-size: 20px;
@@ -16,7 +16,6 @@ body {
         background-color: var(--color-bg-dark);
         color: var(--default-text-color-dark);
     }
-
 }
 
 a {

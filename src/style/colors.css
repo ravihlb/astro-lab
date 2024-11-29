@@ -1,8 +1,8 @@
 :root {
-    --accent-color-primary: #d07319;
     --default-text-color: #151515;
-
     --default-text-color-dark: #efeeee;
+
+    --accent-color-primary: #d07319;
 
     --color-bg-default: #e2d1af;
     --color-bg-dark: #181a1b;
