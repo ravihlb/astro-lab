@@ -1,14 +1,14 @@
 https://github.com/ravihlb/astro-lab
 
 ## Developing - Quick Setup
-Once you've created a project and installed dependencies with `yarn` :
+Once you've created a project and installed dependencies with `pnpm` :
 
 ```bash
-yarn [install]
-yarn dev
+pnpm [install]
+pnpm dev
 
 # or start the server and open the app in a new browser tab
-yarn dev -- --open
+pnpm dev -- --open
 ```
 
 ## Building
@@ -16,7 +16,7 @@ yarn dev -- --open
 To create a production version of your app:
 
 ```bash
-yarn build
+pnpm build
 ```
 
-You can preview the production build with `yarn preview`.
+You can preview the production build with `pnpm preview`.
